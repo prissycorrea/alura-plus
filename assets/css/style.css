@@ -35,6 +35,7 @@ body {
 .container__conteudoPrincipal {
     justify-items: center;
     display: grid;
+    margin-left: 4%;
     max-width: 90%;
 }
 
