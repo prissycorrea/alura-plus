@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/*Variáveis para as cores do documento*/
+:root {
+    --branco-principal: #FFFFFF;
+    --botao-azul: #167BF7;
+    --botao-azul-efeito: #3c92fa;
+    --cinza-secundario: #C0C0C0;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Config. pradrão da página*/
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*Área da chamada*/
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+}
+
+.container__conteudoPrincipal {
+    justify-items: center;
+    display: grid;
+    max-width: 90%;
+}
+
+.principal {
+    align-items: center;
+    background-image: url('../img/Background.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    color: var(--branco-principal);
+    display: block;
+    padding: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+}
+
+.botao__secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso {
+    color: var(--cinza-secundario);
+    font-size: 12px;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+
+/*Área explicação do combo*/
+.secundario__imagem {
+    width: 30%;
+}
+
+.container__secundario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    color: var(--branco-principal);
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+/*Área dos dispositivos*/
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.dispositivos {
+    padding-top: 180px;
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+
+/*Área do rodapé*/
+footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 150px;
+}
+
+.rodape__lista {
+    align-items: center;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    list-style-type: none;
+    padding: 50px;
+    text-align: center;
+}
+
+.lista__item {
+    font-size: 32px;
+}
+
+.lista__link a {
+    color: var(--branco-principal);
+    text-decoration: none;
+}
+
+.lista__link {
+    font-size: 16px;
+}
+
+.rodape__texto {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
